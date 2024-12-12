@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Homepage extends StatefulWidget {
-  // ignore: use_super_parameters
-  const Homepage({Key? key, required Center body})
-      : super(key: key); // Removed incorrect required parameter.
+  const Homepage({Key? key, required Center body}) : super(key: key);
 
   @override
   State<Homepage> createState() => _HomepageState();
@@ -18,10 +16,10 @@ class _HomepageState extends State<Homepage> {
 
   // List of smart devices
   final List<List<dynamic>> mySmartDevices = [
-    ["Smart Light", "lib/icons/lightbulb.png", true],
-    ["Smart AC", "lib/icons/lightbulb.png", false],
-    ["Smart TV", "lib/icons/lightbulb.png", true],
-    ["Smart Fan", "lib/icons/lightbulb.png", false],
+    ["Smart Light", "assets/images/lightbulb.png", true],
+    ["Smart AC", "assets/images/Smart Ac.png", false],
+    ["Smart TV", "assets/images/lightbulb.png", true],
+    ["Smart Fan", "assets/images/lightbulb.png", false],
   ];
 
   // Toggle switch method
