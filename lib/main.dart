@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:smart_home_app/presentation%20/home.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize RevenueCat with your API key
+  // ignore: deprecated_member_use
+  await Purchases.setDebugLogsEnabled(true);
+  // ignore: deprecated_member_use
+  await Purchases.setup("sk_xEhbcuUbghYmVVZaegEUCJxRfEjTX");
+
   runApp(const MainApp());
 }
 
